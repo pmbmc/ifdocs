@@ -21,9 +21,48 @@ There are 2 methods for deploying the jobtype
 1.) Using the Application Integrator UI
 2.) Using the Control-M Automation  
 
+#### Return to Azure Data Factory plugin Introduction
+
+https://pmbmc.github.io/ifdocs/
+
+ 
+### Authentication:
+This integration uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
+No username and passwords are used. Instead the Azure service account key file concept is applied.
+ 
+Performance:
+ 
+Note:
+The current job type supports Linux and Windows
+Tested on : Python 3.7
+ 
+Job Type description
+
+Description for each field
+ 
+What:
+Connection Profile: Used for authenticating with ADF
+
+![connectionprofile](./images/datafactconnprofimage.png)
+
+ 
+===== Pipeline Parameters =====
+
+Job Set Path - Path to python pipeline executable
+Trigger Script - Python pipeline executable
+Resource Group - Azure Resource Group Name
+Factory Name - Azure Data Factory Name
+Pipeline Name - Pipeline to be triggered
+ 
+![connectionprofile](./images/adfjobfields.png)
 
 ### Building your ADF job in Control-M Automation API
 
+Control-M automation api allows for the creation of jobs in a JSON format
+Once you have deployed the ADF plugin you have immediate support for the creation of ADF pipeline
+jobs in JSON format.
+
+Sample JSON
 
 ```
 {
@@ -56,41 +95,6 @@ There are 2 methods for deploying the jobtype
 
 
 ```
-
-#### Return to Azure Data Factory plugin Introduction
-
-https://pmbmc.github.io/ifdocs/
-
- 
-### Authentication:
-This integration uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
-No username and passwords are used. Instead the Azure service account key file concept is applied.
- 
-Performance:
- 
-Note:
-The current job type supports Linux and Windows
-Tested on : Python 3.7
- 
-Job Type description
-job_gross.png
-Description for each field
- 
-What:
-Connection Profile: Used for authenticating with ADF
-
-![connectionprofile](./images/datafactconnprofimage.png)
-
- 
-===== Pipeline Parameters =====
-
-Job Set Path - Path to python pipeline executable
-Trigger Script - Python pipeline executable
-Resource Group - Azure Resource Group Name
-Factory Name - Azure Data Factory Name
-Pipeline Name - Pipeline to be triggered
- 
-![connectionprofile](./images/adfjobfields.png)
  
 Prerequisites and installation notes:
  
