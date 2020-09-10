@@ -57,7 +57,7 @@ There are 2 methods for deploying the jobtype
 
 ```
 
-### Return to ADF Getting Started 
+### Return to ADF Intro
 
 https://pmbmc.github.io/ifdocs/
 
