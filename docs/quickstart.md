@@ -90,6 +90,8 @@ Resource Group - Azure Resource Group Name
 Factory Name - Azure Data Factory Name
 Pipeline Name - Pipeline to be triggered
  
+![connectionprofile](./images/adfjobfields.png)
+ 
 Prerequisites and installation notes:
  
 Control-M Agent on a Linux System with the Application Integrator CM
