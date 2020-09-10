@@ -20,7 +20,7 @@ Prerequisites and installation notes:
 
     This plugin was tested on python 3.7
 
-    service account credentials
+    Azure service account credentials
  
 Installation:
 The Azure data factory integration uses in the Azure data factory api. Python application.
