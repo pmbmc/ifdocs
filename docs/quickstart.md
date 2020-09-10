@@ -14,18 +14,18 @@ Control-M Integration to Azure data factory (ADF) pipelines.
  
 ### Installation Details
 
+Prerequisites and installation notes:
+ 
+Control-M Agent on a Linux System with the Application Integrator CM
+python 3.6 (tested)
+service account credentials
+
 Download the Azure Data Factory job from http://github.com/adfaijob
 
 There are 2 methods for deploying the jobtype
 
 1. Using the Application Integrator UI
 2. Using the Control-M Automation  
-
-Prerequisites and installation notes:
- 
-Control-M Agent on a Linux System with the Application Integrator CM
-python 3.6 (tested)
-service account credentials
  
 Installation:
 The Azure data factory integration uses in the Azure data factory api. Python application.
@@ -51,17 +51,13 @@ Note:
 The current job type supports Linux and Windows
 Tested on : Python 3.7
  
-Job Type description
-
-Description for each field
- 
-What:
 Connection Profile: Used for authenticating with ADF
+Note: The connection profile details will be encrypted after entry.
 
 ![connectionprofile](./images/datafactconnprofimage.png)
-
- 
-===== Pipeline Parameters =====
+  
+  
+===== Pipeline Job Parameters Description =====
 
 1. Job Set Path - Path to python pipeline executable
 2. Trigger Script - Python pipeline executable
