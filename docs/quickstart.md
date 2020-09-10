@@ -64,7 +64,7 @@ Pipeline Name - Pipeline to be triggered
 
 ### Building your ADF job in Control-M Automation API
 
-Control-M automation api allows for the creation of jobs in a JSON format
+Control-M automation api allows for the creation of jobs in a JSON format.
 Once you have deployed the ADF plugin you have immediate support for the creation of ADF pipeline
 jobs in JSON format.
 
