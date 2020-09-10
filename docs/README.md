@@ -19,12 +19,12 @@ for orchestrating data movement and transforming data at scale.
 
 Hyper automation allows for orchestrating a multitude of steps across business processes. In the context of data pipelines
 this means that a data source may be the start of a pipeline but it is not the starting point of a business process.
-A number of steps would be performed prior to a data pipeline starts. Prior steps could be application based where the data 
+A number of steps would be performed prior to a data pipeline being triggered. Prior steps could be application based where the data 
 source is generated as an output from the application. Automating the end to end process provides clear and decisive 
 visibility and management of the entire ecosystem, bonding pipelines with supplying applications.
 
 The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with the rest of your application 
-ecosystem, allowing for true hyper automated application stack.
+ecosystem, allowing for a true hyper automated application stack.
 
 ### Installation Guide
 https://pmbmc.github.io/ifdocs/#/quickstart
