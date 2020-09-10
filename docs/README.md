@@ -36,7 +36,7 @@ Description for each field
 What:
 Connection Profile: Used for authenticating with ADF
 
-(./images/datafactconnprofimage.png)
+![connprofile](./images/datafactconnprofimage.png)
 
 The integration uses OAuth2 to authenticate and authorize access to Azure data factory.
 No username and passwords are used. Instead the Azure service account key file is once, during installation downloaded to the client (= Linux server where the Control-M agent with the Azure-cloud-sdk is installed). Each time a request is made the client requests an access token to authenticate and authorize access to Azure data factory.
