@@ -57,7 +57,7 @@ There are 2 methods for deploying the jobtype
 
 ```
 
-### Return to ADF Intro
+#### Return to Azure Data Factory plugin Introduction
 
 https://pmbmc.github.io/ifdocs/
 
