@@ -17,15 +17,17 @@ Control-M Integration to Azure data factory (ADF) pipelines.
 Prerequisites and installation notes:
  
 Control-M Agent on a Linux System with the Application Integrator CM
-python 3.6 (tested)
-service account credentials
+
+    python 3.6 (tested)
+
+    service account credentials
 
 Download the Azure Data Factory job from http://github.com/adfaijob
 
 There are 2 methods for deploying the jobtype
 
-1. Using the Application Integrator UI
-2. Using the Control-M Automation  
+    1. Using the Application Integrator UI
+    2. Using the Control-M Automation  
  
 Installation:
 The Azure data factory integration uses in the Azure data factory api. Python application.
@@ -40,11 +42,11 @@ https://docs.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-
 This plugin uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
 No username and passwords are used.
    
-1. Download the Integration Factory AI jobtype.
-2. Download the python package and unzip the contents.
-3. Deploy the plugin through Control-M Application Integrator.
-4. Define a connection profile
-5. Run your first Azure Data Factory pipeline from Control-M
+    1. Download the Integration Factory AI jobtype.
+    2. Download the python package and unzip the contents.
+    3. Deploy the plugin through Control-M Application Integrator.
+    4. Define a connection profile
+    5. Run your first Azure Data Factory pipeline from Control-M
 
  
 Note:
@@ -57,13 +59,13 @@ Note: The connection profile details will be encrypted after entry.
 ![connectionprofile](./images/datafactconnprofimage.png)
   
   
-===== Pipeline Job Parameters Description =====
+    ===== Pipeline Job Parameters Description =====
 
-1. Job Set Path - Path to python pipeline executable
-2. Trigger Script - Python pipeline executable
-3. Resource Group - Azure Resource Group Name
-4. Factory Name - Azure Data Factory Name
-5. Pipeline Name - Pipeline to be triggered
+    1. Job Set Path - Path to python pipeline executable
+    2. Trigger Script - Python pipeline executable
+    3. Resource Group - Azure Resource Group Name
+    4. Factory Name - Azure Data Factory Name
+    5. Pipeline Name - Pipeline to be triggered
  
 ![jobfields](./images/adfjobfields.png)
 
