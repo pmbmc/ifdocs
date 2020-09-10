@@ -18,8 +18,8 @@ Download the Azure Data Factory job from http://github.com/adfaijob
 
 There are 2 methods for deploying the jobtype
 
-1.) Using the Application Integrator UI
-2.) Using the Control-M Automation  
+1. Using the Application Integrator UI
+2. Using the Control-M Automation  
 
 Prerequisites and installation notes:
  
@@ -63,11 +63,11 @@ Connection Profile: Used for authenticating with ADF
  
 ===== Pipeline Parameters =====
 
-Job Set Path - Path to python pipeline executable
-Trigger Script - Python pipeline executable
-Resource Group - Azure Resource Group Name
-Factory Name - Azure Data Factory Name
-Pipeline Name - Pipeline to be triggered
+1. Job Set Path - Path to python pipeline executable
+2. Trigger Script - Python pipeline executable
+3. Resource Group - Azure Resource Group Name
+4. Factory Name - Azure Data Factory Name
+5. Pipeline Name - Pipeline to be triggered
  
 ![jobfields](./images/adfjobfields.png)
 
