@@ -29,14 +29,23 @@ service account credentials
  
 Installation:
 The Azure data factory integration uses in the Azure data factory api. Python application.
- 
-1. Download the Integration Factory AI jobtype 
+
+#### Performance:
+Performance is dependant on your connectivity to Azure. The job is based on REST communication using the Azure
+recommended api calls for Azure Data Factory.
+
+https://docs.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers
  
 ### Authentication:
-This integration uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
-No username and passwords are used. Instead the Azure service account key file concept is applied.
- 
-Performance:
+This plugin uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
+No username and passwords are used.
+   
+1. Download the Integration Factory AI jobtype.
+2. Download the python package and unzip the contents.
+3. Deploy the plugin through Control-M Application Integrator.
+4. Define a connection profile
+5. Run your first Azure Data Factory pipeline from Control-M
+
  
 Note:
 The current job type supports Linux and Windows
@@ -60,7 +69,7 @@ Resource Group - Azure Resource Group Name
 Factory Name - Azure Data Factory Name
 Pipeline Name - Pipeline to be triggered
  
-![connectionprofile](./images/adfjobfields.png)
+![jobfields](./images/adfjobfields.png)
 
 ### Building your ADF job in Control-M Automation API
 

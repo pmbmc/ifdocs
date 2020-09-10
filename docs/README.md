@@ -1,7 +1,7 @@
 # Azure Data Factory
 Version 9
 
-![connprofile](./images/pipelineworkflow.png)
+![workflow](./images/pipelineworkflow.png)
 
 Created by  on 01-Sep-2020.
 
@@ -29,17 +29,6 @@ ecosystem, allowing for true hyper automated application stack.
 ### Installation Guide
 https://pmbmc.github.io/ifdocs/#/quickstart
  
-### Authentication:
-This plugin uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
-No username and passwords are used.
- 
-Performance:
-Performance is dependant on your connectivity to Azure. The job is based on REST communication using the Azure
-recommended api calls for Azure Data Factory.
-https://docs.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers
- 
-Note:
-The current job type supports Linux and Windows
-Tested on : Python 3.6
+
  
 
