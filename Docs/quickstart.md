@@ -100,8 +100,5 @@ The Azure data factory integration uses in the Azure data factory api. Python ap
  
 1. Download the Integration Factory AI jobtype 
  
-Installation instructions of gsutil can be found here:
-https://cloud.Azure.com/storage/docs/gsutil_install#install
- 
 ## Sample installation on Centos 7.x Linux:
  
