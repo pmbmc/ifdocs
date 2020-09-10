@@ -21,10 +21,16 @@ There are 2 methods for deploying the jobtype
 1.) Using the Application Integrator UI
 2.) Using the Control-M Automation  
 
-#### Return to Azure Data Factory plugin Introduction
-
-https://pmbmc.github.io/ifdocs/
-
+Prerequisites and installation notes:
+ 
+Control-M Agent on a Linux System with the Application Integrator CM
+python 3.6 (tested)
+service account credentials
+ 
+Installation:
+The Azure data factory integration uses in the Azure data factory api. Python application.
+ 
+1. Download the Integration Factory AI jobtype 
  
 ### Authentication:
 This integration uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
@@ -96,16 +102,7 @@ Sample JSON
 
 ```
  
-Prerequisites and installation notes:
- 
-Control-M Agent on a Linux System with the Application Integrator CM
-python 3.6 (tested)
-service account credentials
- 
-Installation:
-The Azure data factory integration uses in the Azure data factory api. Python application.
- 
-1. Download the Integration Factory AI jobtype 
- 
-## Sample installation on Centos 7.x Linux:
- 
+ #### Return to Azure Data Factory plugin Introduction
+
+https://pmbmc.github.io/ifdocs/
+
