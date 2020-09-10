@@ -16,7 +16,7 @@ Azure data factory is a cloud-based ETL and data integration service that allows
 and transforming data at scale 
 
 ### Installation Guide
-http://localhost:3000/#/quickstart
+https://pmbmc.github.io/ifdocs/#/quickstart
  
 ### Authentication:
 This integration uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.

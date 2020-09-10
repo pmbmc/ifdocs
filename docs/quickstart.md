@@ -58,7 +58,7 @@ There are 2 methods for deployment
 
 ### Return to ADF Getting Started 
 
-http://localhost:3000
+https://pmbmc.github.io/ifdocs/
 
  
 ### Authentication:
