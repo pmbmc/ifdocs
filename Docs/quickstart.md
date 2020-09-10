@@ -66,11 +66,10 @@ This integration uses the Azure recommended OAuth2 protocol to authenticate and 
 No username and passwords are used. Instead the Azure service account key file concept is applied.
  
 Performance:
-The job type support multi-threaded parallel uploads, downloads and deletions of objects
  
 Note:
 The current job type supports Linux and Windows
-Tested on : Python 3.6
+Tested on : Python 3.7
  
 Job Type description
 job_gross.png
@@ -81,8 +80,6 @@ Connection Profile: Used for authenticating with ADF
 
 ![image](/uploads/dd5e50f9432cdc69bcdb3c126796f25a/image.png)
 
-The integration uses OAuth2 to authenticate and authorize access to Azure data factory.
-No username and passwords are used. Instead the Azure service account key file is once, during installation downloaded to the client (= Linux server where the Control-M agent with the Azure-cloud-sdk is installed). Each time a request is made the client requests an access token to authenticate and authorize access to Azure data factory.
  
 ===== Pipeline Parameters =====
 
@@ -121,41 +118,4 @@ repo_gpgcheck=1
 gpgkey=https://packages.cloud.Azure.com/yum/doc/yum-key.gpg
               https://packages.cloud.Azure.com/yum/doc/rpm-package-key.gpg
  
-# Install the Cloud SDK
-sudo yum install Azure-cloud-sdk
- 
-With gsutil installed from the Cloud SDK, you should authenticate with service account credentials.
-
-2. Create a Service Account in Azure
-Use an existing service account or create a new one, and download the associated private key.
-=> Azure Cloud Platform Console -> IAM&Admin -> Service Accounts
- 
-3.    Activate the Service account for your Linux server
-On your Linux server run the command:
-sudo gcloud auth activate-service-account --key-file <keyfile incl. path>
-sudo gcloud init ( Authorizes access and performs other common Cloud SDK setup steps)
- 
 Example:
-# Download the service account key file from the Azure cloud platform console menu:
-=> Azure Cloud Platform Console -> IAM&Admin -> Service Accounts
-and save it in a local folder on your Linux server e.g.
-/home/emuser/coding/Azure/clagcs-57040b04e789.json
- 
-# activate the service account ( do not use sudo)
-gcloud auth activate-service-account --key-file /home/emuser/coding/Azure/clagcs-57040b04e789.json
- 
-# Verify the service account
-gcloud auth list
- 
-# Authorizes access and performs other common Cloud SDK setup steps (do not use sudo)
-gcloud init
- 
-# remove the service account file from the download location ( for security )
-The command gcloud auth activate-service-account stores the credential file in a secure location.
-The download version can be removed:
-e.g.: rm /home/emuser/coding/Azure/clagcs-57040b04e789.json
- 
-Compatibility:
-Application version: This job type is tested against Azure data factory ( GSUTIL Version 4.49 )
-Platforms: This job type will only run on Linux (a windows version will follow)
-Control-M version: Tested on Control-M V9.19.200 & V9.20.0 (pre-release)
