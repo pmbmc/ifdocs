@@ -1,6 +1,8 @@
 # Azure Data Factory
 Version 9
 
+![connprofile](./images/pipelineworkflow.png)
+
 Created by  on 01-Sep-2020.
 
 Share This:
