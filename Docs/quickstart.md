@@ -105,17 +105,3 @@ https://cloud.Azure.com/storage/docs/gsutil_install#install
  
 ## Sample installation on Centos 7.x Linux:
  
-# Update YUM with latest Cloud SDK repo information:
- 
-sudo vi /etc/yum.repos.d/Azure-cloud-sdk.repo
- 
-[Azure-cloud-sdk]
-name=Azure Cloud SDK
-baseurl=https://packages.cloud.Azure.com/yum/repos/cloud-sdk-el7-x86_64
-enabled=1
-gpgcheck=1
-repo_gpgcheck=1
-gpgkey=https://packages.cloud.Azure.com/yum/doc/yum-key.gpg
-              https://packages.cloud.Azure.com/yum/doc/rpm-package-key.gpg
- 
-Example:

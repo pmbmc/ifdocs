@@ -65,17 +65,7 @@ https://cloud.Azure.com/storage/docs/gsutil_install#install
  
 ## Sample installation on Centos 7.x Linux:
  
-# Update YUM with latest Cloud SDK repo information:
- 
-sudo vi /etc/yum.repos.d/Azure-cloud-sdk.repo
- 
- 
-# Install the Cloud SDK
-sudo yum install Azure-cloud-sdk
 Example:
-# Download the service account key file from the Azure cloud platform console menu:
- 
-# Verify the service account
  
  
 Compatibility:
