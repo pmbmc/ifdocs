@@ -79,7 +79,7 @@ Description for each field
 What:
 Connection Profile: Used for authenticating with ADF
 
-![connectionprofile](images/datafactconnprofimage.png)
+![connectionprofile](./images/datafactconnprofimage.png)
 
  
 ===== Pipeline Parameters =====
