@@ -14,12 +14,13 @@ Control-M Integration to Azure data factory (ADF) pipelines.
  
 ### Installation Details
 
-Download the Azure Data Factory job from http://github.com/adfai
+Download the Azure Data Factory job from http://github.com/adfaijob
 
-There are 2 methods for deployment
+There are 2 methods for deploying the jobtype
 
 1.) Using the Application Integrator UI
 2.) Using the Control-M Automation  
+
 
 ### Building your ADF job in Control-M Automation API
 
