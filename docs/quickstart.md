@@ -32,9 +32,10 @@ This plugin uses the Azure recommended OAuth2 protocol to authenticate and autho
 No username and passwords are used.
 
    
-#### 1. Download the Azure Data Factory job from  http://github.com/adfaijob.
-#### 2. Download the python package from  http://github.com/adfaijob/pythonpackage and unzip the contents.
-
+#### 1. Download the Azure Data Factory job 
+http://github.com/adfaijob.
+#### 2. Download the python package and unzip the contents.
+http://github.com/adfaijob/pythonpackage
 ##### Watch an introduction video on Application Integrator
 [AppIntVideo](https://youtu.be/7CshwZYMPWw)
 
