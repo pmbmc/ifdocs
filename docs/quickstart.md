@@ -15,7 +15,7 @@ linkedin sharing button twitter sharing button email sharing button sharethis sh
 This plugin is based on REST communication using the Azure
 recommended api calls for Azure Data Factory.
 
-https://docs.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers
+https://docs.microsoft.com/en-us/rest/api/datafactory/triggerruns
  
 ### Installation Details
 
