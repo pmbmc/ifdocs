@@ -43,7 +43,7 @@ No username and passwords are used.
         b. Using the Control-M Automation API      
 ##### 4. Define a connection profile
 
-### Connection Profile: Used for authenticating with ADF
+##### Connection Profile: Used for authenticating with ADF
     Add a new connection profile and input the required fields.
     Note: The connection profile details will be encrypted after entry.
 
