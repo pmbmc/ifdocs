@@ -1,4 +1,4 @@
-# Azure Data Factory
+# Control-M Azure Data Factory plugin
 Version 9
 
 ### Go directly to the Quick Start Guide
