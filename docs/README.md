@@ -17,6 +17,10 @@ Shares
 linkedin sharing button twitter sharing button email sharing button sharethis sharing button
  
 ### Detailed description:
+
+The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with the rest of your application 
+ecosystem, allowing for a true hyper automated application stack.
+
 Azure data factory is a cloud-based ETL and data integration service that allows you to create data-driven workflows 
 for orchestrating data movement and transforming data at scale.
 
@@ -26,8 +30,7 @@ A number of steps would be performed prior to a data pipeline being triggered. P
 source is generated as an output from the application. Automating the end to end process provides clear and decisive 
 visibility and management of the entire ecosystem, bonding pipelines with supplying applications.
 
-The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with the rest of your application 
-ecosystem, allowing for a true hyper automated application stack.
+
 
  
 
