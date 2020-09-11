@@ -10,7 +10,12 @@ linkedin sharing button twitter sharing button email sharing button sharethis sh
 
  
 ### Quick Start:
-Control-M Integration to Azure data factory (ADF) pipelines.
+####Control-M Integration to Azure data factory (ADF) pipelines.
+
+This plugin is based on REST communication using the Azure
+recommended api calls for Azure Data Factory.
+
+https://docs.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers
  
 ### Installation Details
 
@@ -105,10 +110,7 @@ Sample JSON
     7. Run your first Azure Data Factory pipeline from Control-M
 
 #### Performance:
-Performance is dependant on your connectivity to Azure. The job is based on REST communication using the Azure
-recommended api calls for Azure Data Factory.
-
-https://docs.microsoft.com/en-us/azure/data-factory/concepts-pipeline-execution-triggers
+Performance is dependant on your connectivity to Azure. 
 
 Note:
     The current job type can be used on Linux and Windows
