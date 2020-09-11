@@ -57,6 +57,10 @@ No username and passwords are used.
  
 ![jobfields](./images/adfjobfields.png)
 
+### Defining a connection profile
+
+[bmc website](http://bmc.com ':include :type=iframe width=100% height=400px')
+
     6. You can also choose to build your ADF job in Control-M Automation API
 
 Control-M automation api allows for the creation of jobs in a JSON format.
@@ -95,9 +99,7 @@ Sample JSON
 }
 
 
-```
-
-    
+``` 
     
     7. Run your first Azure Data Factory pipeline from Control-M
 
