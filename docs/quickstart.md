@@ -36,6 +36,7 @@ No username and passwords are used.
     4. Define a connection profile
 
 ### Connection Profile: Used for authenticating with ADF
+    Add a new connection profile and input the required fields.
     Note: The connection profile details will be encrypted after entry.
 
 ![connectionprofile](./images/datafactconnprofimage.png)
@@ -54,7 +55,7 @@ No username and passwords are used.
  
 #### Job Definition panel
  
-![jobfields](./images/adfjobfields.png ':include :type=code')
+![jobfields](./images/adfjobfields.png)
 
     6. You can also choose to build your ADF job in Control-M Automation API
 
