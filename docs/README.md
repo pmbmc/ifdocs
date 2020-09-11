@@ -1,6 +1,9 @@
 # Azure Data Factory
 Version 9
 
+### Go directly to the Installation Guide
+https://pmbmc.github.io/ifdocs/#/quickstart
+
 ![workflow](./images/pipelineworkflow.png)
 
 Created by  on 01-Sep-2020.
@@ -25,10 +28,6 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with the rest of your application 
 ecosystem, allowing for a true hyper automated application stack.
-
-### Installation Guide
-https://pmbmc.github.io/ifdocs/#/quickstart
- 
 
  
 
