@@ -65,8 +65,6 @@ No username and passwords are used.
  
 ![jobfields](./images/adfjobfields.png)
 
-### Defining a connection profile
-
 ##### 6. You can also choose to build your ADF job in Control-M Automation API
 
 Control-M automation api allows for the creation of jobs in a JSON format.
