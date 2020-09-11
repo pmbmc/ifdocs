@@ -59,7 +59,7 @@ No username and passwords are used.
 
 ### Defining a connection profile
 
-[chinwell](https://chinwell.com ':include :type=iframe width=100% height=400px')
+[AppIntVideo](https://youtu.be/7CshwZYMPWw)
 
     6. You can also choose to build your ADF job in Control-M Automation API
 
