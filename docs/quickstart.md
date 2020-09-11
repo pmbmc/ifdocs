@@ -10,7 +10,7 @@ linkedin sharing button twitter sharing button email sharing button sharethis sh
 
  
 ### Quick Start:
-####Control-M Integration to Azure data factory (ADF) pipelines.
+#### Control-M Integration to Azure data factory (ADF) pipelines.
 
 This plugin is based on REST communication using the Azure
 recommended api calls for Azure Data Factory.
