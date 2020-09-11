@@ -46,11 +46,11 @@ No username and passwords are used.
 
 | Field | Value |
 | --- | --- |
-| Job Set Path | Path to python pipeline executable |
-| Trigger Script | Python pipeline executable |
-| Resource Group | Azure Resource Group Name |
-| Factory Name | Azure Data Factory Name |
-| Pipeline Name | Pipeline to be triggered |
+| Job Set Path | <code>Path to python pipeline executable</code> |
+| Trigger Script | <code>Python pipeline executable</code> |
+| Resource Group | <code>Azure Resource Group Name</code> |
+| Factory Name | <code>Azure Data Factory Name</code> |
+| Pipeline Name | <code>Pipeline to be triggered</code> |
  
 ![jobfields](./images/adfjobfields.png)
 
