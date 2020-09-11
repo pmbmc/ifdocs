@@ -7,7 +7,7 @@ https://pmbmc.github.io/ifdocs/#/quickstart
 ### Short description:
 Control-M Integration plugin to Azure data factory (ADF) pipelines.
 
-![workflow](./images/pipelineworkflow.png)
+
 
 Created by  on 01-Sep-2020.
 
@@ -20,6 +20,8 @@ linkedin sharing button twitter sharing button email sharing button sharethis sh
 
 The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with the rest of your application 
 ecosystem, allowing for a true hyper automated application stack.
+
+![workflow](./images/pipelineworkflow.png)
 
 Azure data factory is a cloud-based ETL and data integration service that allows you to create data-driven workflows 
 for orchestrating data movement and transforming data at scale.
