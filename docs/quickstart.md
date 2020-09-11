@@ -1,10 +1,10 @@
-# Installation instructions 
+## Installation instructions 
 Version 8
 
 Created by Neil Cullum on 01-Sep-2020.
 
 Share This:
-1
+
 Shares
 linkedin sharing button twitter sharing button email sharing button sharethis sharing button
 
@@ -27,21 +27,21 @@ Prerequisites and installation notes:
 
     Azure service account credentials
   
-### Authentication:
+#### Authentication:
 This plugin uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
 No username and passwords are used.
 
    
-##### 1. Download the Azure Data Factory job from http://github.com/adfaijob.
-##### 2. Download the python package from http://github.com/adfaijob/pythonpackage and unzip the contents.
+#### 1. Download the Azure Data Factory job from http://github.com/adfaijob.
+#### 2. Download the python package from http://github.com/adfaijob/pythonpackage and unzip the contents.
 
-#### Watch an introduction video on Application Integrator
+##### Watch an introduction video on Application Integrator
 [AppIntVideo](https://youtu.be/7CshwZYMPWw)
 
-##### 3. Deploy the plugin.
+#### 3. Deploy the plugin.
         a. Using the Application Integrator UI
         b. Using the Control-M Automation API      
-##### 4. Define a connection profile
+#### 4. Define a connection profile
 
 ##### Connection Profile: Used for authenticating with ADF
     Add a new connection profile and input the required fields.
@@ -49,7 +49,7 @@ No username and passwords are used.
 
 ![connectionprofile](./images/datafactconnprofimage.png)
 
-##### 5. Define a pipeline job in Control-M with the below details
+#### 5. Define a pipeline job in Control-M with the below details
     
     ===== Pipeline Job Parameters Description =====
 
@@ -61,11 +61,11 @@ No username and passwords are used.
 | Factory Name | <code>Azure Data Factory Name</code> |
 | Pipeline Name | <code>Pipeline to be triggered</code> |
  
-#### Job Definition panel
+##### Job Definition panel
  
 ![jobfields](./images/adfjobfields.png)
 
-##### 6. You can also choose to build your ADF job in Control-M Automation API
+#### 6. You can also choose to build your ADF job in Control-M Automation API
 
 Control-M automation api allows for the creation of jobs in a JSON format.
 Once you have deployed the ADF plugin you have immediate support for the creation of ADF pipeline
@@ -105,9 +105,9 @@ Sample JSON
 
 ``` 
     
-##### 7. Run your first Azure Data Factory pipeline from Control-M
+#### 7. Run your first Azure Data Factory pipeline from Control-M
 
-#### Performance:
+##### Performance:
 Performance is dependant on your connectivity to Azure. 
 
 Note:
