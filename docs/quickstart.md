@@ -52,7 +52,9 @@ No username and passwords are used.
 | Factory Name | <code>Azure Data Factory Name</code> |
 | Pipeline Name | <code>Pipeline to be triggered</code> |
  
-![jobfields](./images/adfjobfields.png)
+#### Job Definition panel
+ 
+![jobfields](./images/adfjobfields.png ':include :type=code')
 
     6. You can also choose to build your ADF job in Control-M Automation API
 
