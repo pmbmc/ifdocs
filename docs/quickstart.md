@@ -30,6 +30,10 @@ No username and passwords are used.
     1. Download the Azure Data Factory job from http://github.com/adfaijob.
     2. Download the python package from http://github.com/adfaijob/pythonpackage and unzip the contents.
     3. Deploy the plugin.
+    
+#### Watch an introduction video
+[AppIntVideo](https://youtu.be/7CshwZYMPWw)
+
         a. Using the Application Integrator UI
         b. Using the Control-M Automation API     
     
@@ -58,8 +62,6 @@ No username and passwords are used.
 ![jobfields](./images/adfjobfields.png)
 
 ### Defining a connection profile
-
-[AppIntVideo](https://youtu.be/7CshwZYMPWw)
 
     6. You can also choose to build your ADF job in Control-M Automation API
 
