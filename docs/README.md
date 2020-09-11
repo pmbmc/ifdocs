@@ -4,6 +4,9 @@ Version 9
 ### Go directly to the Quick Start Guide
 https://pmbmc.github.io/ifdocs/#/quickstart
 
+### Short description:
+Control-M Integration plugin to Azure data factory (ADF) pipelines.
+
 ![workflow](./images/pipelineworkflow.png)
 
 Created by  on 01-Sep-2020.
@@ -12,9 +15,6 @@ Share This:
 1
 Shares
 linkedin sharing button twitter sharing button email sharing button sharethis sharing button
- 
-### Short description:
-Control-M Integration to Azure data factory (ADF) pipelines.
  
 ### Detailed description:
 Azure data factory is a cloud-based ETL and data integration service that allows you to create data-driven workflows 
