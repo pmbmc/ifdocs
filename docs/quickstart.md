@@ -59,7 +59,7 @@ No username and passwords are used.
 
 ### Defining a connection profile
 
-![bmc website](http://bmc.com ':include :type=iframe width=100% height=400px')
+[chinwell](https://chinwell.com ':include :type=iframe width=100% height=400px')
 
     6. You can also choose to build your ADF job in Control-M Automation API
 
