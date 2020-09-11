@@ -1,7 +1,7 @@
 # Azure Data Factory
 Version 9
 
-### Go directly to the Installation Guide
+### Go directly to the Quick Start Guide
 https://pmbmc.github.io/ifdocs/#/quickstart
 
 ![workflow](./images/pipelineworkflow.png)
