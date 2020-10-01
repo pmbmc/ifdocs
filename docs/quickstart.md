@@ -1,5 +1,5 @@
 ## Installation instructions 
-Version 9
+Version 9.15
 
 Created by Neil Cullum on 10-Sep-2020.
 
@@ -48,7 +48,7 @@ http://github.com/adfaijob/pythonpackage
     Add a new connection profile and input the required fields.
     Note: The connection profile details will be encrypted after entry.
 
-![connectionprofile](./images/datafactconnprofimage.png)
+![connectionprofile](./images/adfconnprof.png)
 
 #### 5. Define a pipeline job in Control-M with the below details
     
@@ -56,15 +56,14 @@ http://github.com/adfaijob/pythonpackage
 
 | Field | Value |
 | --- | --- |
-| Job Set Path | <code>Path to python pipeline executable</code> |
-| Trigger Script | <code>Python pipeline executable</code> |
-| Resource Group | <code>Azure Resource Group Name</code> |
-| Factory Name | <code>Azure Data Factory Name</code> |
-| Pipeline Name | <code>Pipeline to be triggered</code> |
+| Connection Profile | The connection profile name that was define in the connection profile step 4 above
+| Resource Group Name | ADF Resource Group |
+| Data Factory Name | Click the load button for a list Data Factories based on the Resource Group above |
+| Pipeline Name | Click the load button for a list of pipelines available to run |
  
 ##### Job Definition panel
  
-![jobfields](./images/adfjobfields.png)
+![jobfields](./images/adfjobdef.png)
 
 #### 6. You can also choose to build your ADF job in Control-M Automation API
 
@@ -76,19 +75,18 @@ Sample JSON
 
 ```
 {
-  "adfpython": {
+  "myfolder": {
     "Type": "SimpleFolder",
     "ControlmServer": "production",
     "OrderMethod": "Manual",
-    "AzureDataFactorypython_Job_2": {
-      "Type": "Job:ApplicationIntegrator:AzureDataFactorypython",
-      "ConnectionProfile": "<youradfprofile>",
-      "AI-Pipeline Name": "<yourPipelineName>",
-      "SubApplication": "<Subapp>",
-      "Host": "<yourhost>",
+    "Azure Data Factory Pipeline plugin_Job": {
+      "Type": "Job:ApplicationIntegrator:Azure Data Factory Pipeline plugin",
+      "ConnectionProfile": "your-connectioprofile",
+      "AI-Data Factory Name": "your-data-factory-name",
+      "AI-Pipeline Name": "your-pipeline-name",
+      "Host": "host-to-run-task-from",
       "CreatedBy": "emuser",
-      "RunAs": "<youradfprofile>",
-      "Application": "<Application>",
+      "RunAs": "runasuser",
       "When": {
         "WeekDays": [
           "NONE"
@@ -102,8 +100,6 @@ Sample JSON
     }
   }
 }
-
-
 ``` 
     
 #### 7. Run your first Azure Data Factory pipeline from Control-M

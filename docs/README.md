@@ -1,5 +1,5 @@
 # Control-M Azure Data Factory plugin
-Version 9
+Version 9.15
 
 ### Go directly to the Quick Start Guide
 https://pmbmc.github.io/ifdocs/#/quickstart
@@ -8,8 +8,7 @@ https://pmbmc.github.io/ifdocs/#/quickstart
 Control-M Integration plugin to Azure data factory (ADF) pipelines.
 
 
-
-Created by  on 01-Sep-2020.
+Created on 01-Sep-2020.
 
 Share This:
 1
@@ -19,7 +18,8 @@ linkedin sharing button twitter sharing button email sharing button sharethis sh
 ### Detailed description:
 
 The Azure Data Factory plugin for Control-M enables the integration of ADF pipelines with the rest of your application 
-ecosystem, allowing for a true hyper automated application stack.
+ecosystem, allowing for a true hyper automated application stack. True enterprise orchestration enables continuous SLA and business
+process management.
 
 ![workflow](./images/pipelineworkflow.png)
 
@@ -31,6 +31,22 @@ this means that a data source may be the start of a pipeline but it is not the s
 A number of steps would be performed prior to a data pipeline being triggered. Prior steps could be application based where the data 
 source is generated as an output from the application. Automating the end to end process provides clear and decisive 
 visibility and management of the entire ecosystem, bonding pipelines with supplying applications.
+
+#### Features
+
+1. Run an Azure Data Factory pipeline.
+2. Monitor the pipeline status.
+3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.
+4. Integrate Azure pipeline runs with all existing Control-M capabilities 
+    For example : 
+                   
+        a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
+        b. Attach SLA's to your pipeline.
+        c. Wait for a b2b source to arrive and process it in an application and run a pipeline based on the outcome.
+        d. Attach prior and post dependancy steps to your pipeline for a fully encompassed view of your environment.
+        e. A single reference point for the entire lifecycle of your data, from creation to analytics.
+
+
 
 
 
