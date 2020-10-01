@@ -108,11 +108,10 @@ Sample JSON
 
 
 ##### Performance:
-Performance is dependant on your connectivity to Azure. 
+Performance is dependant on your connectivity to Azure.
 
 Note:
     The current job type can be used on Linux and Windows
-    Tested on : Python 3.7
  
  #### Return to Azure Data Factory plugin Introduction
 
