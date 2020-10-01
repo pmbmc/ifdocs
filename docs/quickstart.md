@@ -47,7 +47,7 @@ http://github.com/adfaijob.
 
 ##### Connection Profile: Used for authenticating with ADF
     Add a new connection profile and input the required fields.
-    Note: The connection profile details will be encrypted after entry.
+    Note: The client secret details will be encrypted after entry.
 
 ![connectionprofile](./images/adfconnprof.png)
 
