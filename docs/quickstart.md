@@ -34,15 +34,14 @@ No username and passwords are used.
    
 #### 1. Download the Azure Data Factory job 
 http://github.com/adfaijob.
-#### 2. Download the python package and unzip the contents.
-http://github.com/adfaijob/pythonpackage
+
 ##### Watch an introduction video on Application Integrator
 [AppIntVideo](https://youtu.be/7CshwZYMPWw)
 
-#### 3. Deploy the plugin.
+#### 2. Deploy the plugin.
         a. Using the Application Integrator UI
         b. Using the Control-M Automation API      
-#### 4. Define a connection profile
+#### 3. Define a connection profile
 
 ##### Connection Profile: Used for authenticating with ADF
     Add a new connection profile and input the required fields.
@@ -50,7 +49,7 @@ http://github.com/adfaijob/pythonpackage
 
 ![connectionprofile](./images/adfconnprof.png)
 
-#### 5. Define a pipeline job in Control-M with the below details
+#### 4. Define a pipeline job in Control-M with the below details
     
     ===== Pipeline Job Parameters Description =====
 
@@ -65,7 +64,7 @@ http://github.com/adfaijob/pythonpackage
  
 ![jobfields](./images/adfjobdef.png)
 
-#### 6. You can also choose to build your ADF job in Control-M Automation API
+#### 5. You can also choose to build your ADF job in Control-M Automation API
 
 Control-M automation api allows for the creation of jobs in a JSON format.
 Once you have deployed the ADF plugin you have immediate support for the creation of ADF pipeline
@@ -102,7 +101,9 @@ Sample JSON
 }
 ``` 
     
-#### 7. Run your first Azure Data Factory pipeline from Control-M
+#### 6. Run your first Azure Data Factory pipeline from Control-M
+
+
 
 ##### Performance:
 Performance is dependant on your connectivity to Azure. 
