@@ -21,11 +21,13 @@ https://docs.microsoft.com/en-us/rest/api/datafactory/pipelines/createrun
 
 Prerequisites and installation notes:
  
-    Control-M Agent on a supported Linux or Windows environment with the Application Integrator CM
+    1.) Control-M Agent on a supported Linux or Windows environment with the Application Integrator CM
+    2.) Azure service account credentials
+   
+For details regarding Azure service account authorization, please visit the Azure rest page by using the link below
 
-    This plugin was tested on python 3.7
+https://docs.microsoft.com/en-us/rest/api/azure/#register-your-client-application-with-azure-ad
 
-    Azure service account credentials
   
 #### Authentication:
 This plugin uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
