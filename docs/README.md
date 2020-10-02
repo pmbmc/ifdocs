@@ -46,7 +46,24 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
         d. Attach prior and post dependancy steps to your pipeline for a fully encompassed view of your environment.
         e. A single reference point for the entire lifecycle of your data, from creation to analytics.
 
+5. Avoid connection timeouts and unnecessary pipeline reruns
 
+Here is a typical error caused by contention on a database table due to simultaneous writes
+
+![workflow](./images/pipelinetimeout.png)
+
+As a result there are unnecessary pipeline failures
+
+![workflow](./images/pipelinecontention.png)
+
+This can be managed with Control-M resource management
+
+![workflow](./images/aznocontention.png)
+
+Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to
+lack of resources. The pipelines on the right are only submitted when resources are available.
+
+![workflow](./images/contentionmanagement.png)
 
 
 
