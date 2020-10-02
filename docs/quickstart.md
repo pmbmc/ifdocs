@@ -37,6 +37,7 @@ http://github.com/adfaijob.
 #### 2. Deploy the plugin.
         a. Using the Application Integrator UI
         b. Using the Control-M Automation API  
+    
          
 ![aideploy](./images/deployscreen.png)
         
