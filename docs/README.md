@@ -28,7 +28,7 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 #### Features
 
-* ##### 1. Integrate an Azure Data Factory pipeline with external components.
+* ##### 1. Integrate an Azure Data Factory pipeline with external components.  
 
 ![workflow](./images/pipelineworkflow.png)
 
@@ -36,8 +36,9 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 ![workflow](./images/trackpipeline.png)
 
-* ##### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.
-* ##### 4. Integrate Azure pipeline runs with all existing Control-M capabilities 
+* ##### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.  
+
+* ##### 4. Integrate Azure pipeline runs with all existing Control-M capabilities.  
     For example : 
                    
         a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
@@ -49,7 +50,7 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
    * ##### 5. Avoid connection timeouts and unnecessary pipeline reruns
 
   > ##### Contention Scenario
- ###### Here is a typical error caused by contention on a database table due to simultaneous writes
+ ###### Here is a typical error caused by contention on a database table due to simultaneous writes.  
 
 ![workflow](./images/pipelinetimeout.png)
 
@@ -58,9 +59,9 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 ![workflow](./images/pipelinecontention.png)
 
-  > ##### Contention Management
+  > ##### Contention Management  
 
- ###### This can be managed with Control-M resource management
+ ###### This can be managed with Control-M resource management  
 
 ![workflow](./images/aznocontention.png)
 
