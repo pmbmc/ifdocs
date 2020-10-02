@@ -36,9 +36,11 @@ http://github.com/adfaijob.
 
 #### 2. Deploy the plugin.
         a. Using the Application Integrator UI
+        b. Using the Control-M Automation API  
+         
 ![aideploy](./images/deployscreen.png)
         
-        b. Using the Control-M Automation API      
+           
 #### 3. Define a connection profile
 
 ##### Connection Profile: Used for authenticating with ADF
