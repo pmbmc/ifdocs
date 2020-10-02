@@ -2,12 +2,6 @@
 Version 9.15
 
 Created on 10-Sep-2020.
-
-Share This:
-
-Shares
-linkedin sharing button twitter sharing button email sharing button sharethis sharing button
-
  
 ### Quick Start:
 #### Control-M Integration to Azure data factory (ADF) pipelines.
