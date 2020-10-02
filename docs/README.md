@@ -5,7 +5,7 @@ Version 9.15
 https://pmbmc.github.io/ifdocs/#/quickstart
 
 ### Short description:
-Control-M Integration plugin to Azure data factory (ADF) pipelines.
+Control-M Integration plugin for Azure data factory (ADF) pipelines.
 
 
 Created on 01-Sep-2020
