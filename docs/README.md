@@ -68,7 +68,7 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
   > ##### Results Comparison
 
-![workflow](./images/contentionmanagement.png)
+ ![workflow](./images/contentionmanagement.png)
 
 
 
