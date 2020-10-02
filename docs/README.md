@@ -21,8 +21,6 @@ The Azure Data Factory plugin for Control-M enables the integration of ADF pipel
 ecosystem, allowing for a true hyper automated application stack. True enterprise orchestration enables continuous SLA and business
 process management.
 
-![workflow](./images/pipelineworkflow.png)
-
 Azure data factory is a cloud-based ETL and data integration service that allows you to create data-driven workflows 
 for orchestrating data movement and transforming data at scale.
 
@@ -34,10 +32,16 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 #### Features
 
-1. Run an Azure Data Factory pipeline.
-2. Monitor the pipeline status.
-3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.
-4. Integrate Azure pipeline runs with all existing Control-M capabilities 
+##### 1. Run an Azure Data Factory pipeline.
+
+![workflow](./images/pipelineworkflow.png)
+
+##### 2. Monitor the pipeline status.
+
+![workflow](./images/trackpipeline.png)
+
+##### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.
+##### 4. Integrate Azure pipeline runs with all existing Control-M capabilities 
     For example : 
                    
         a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
@@ -46,22 +50,27 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
         d. Attach prior and post dependancy steps to your pipeline for a fully encompassed view of your environment.
         e. A single reference point for the entire lifecycle of your data, from creation to analytics.
 
-5. Avoid connection timeouts and unnecessary pipeline reruns
+##### 5. Avoid connection timeouts and unnecessary pipeline reruns
 
-Here is a typical error caused by contention on a database table due to simultaneous writes
+  > ##### Contention Scenario
+ ###### Here is a typical error caused by contention on a database table due to simultaneous writes
 
 ![workflow](./images/pipelinetimeout.png)
 
-As a result there are unnecessary pipeline failures
+  > ##### Contention Challenge
+ ###### As a result there are unnecessary pipeline failures
 
 ![workflow](./images/pipelinecontention.png)
 
-This can be managed with Control-M resource management
+  > ##### Contention Management
+
+ ###### This can be managed with Control-M resource management
 
 ![workflow](./images/aznocontention.png)
 
-Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to
-lack of resources. The pipelines on the right are only submitted when resources are available.
+ ###### Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to a lack of resources. The pipelines on the right are only submitted when resources are available.
+
+  > ##### Results Comparison
 
 ![workflow](./images/contentionmanagement.png)
 
