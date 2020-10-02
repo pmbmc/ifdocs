@@ -28,17 +28,17 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 #### Features
 
-* ##### 1. Integrate an Azure Data Factory pipeline with external components.  
+* #### 1. Integrate an Azure Data Factory pipeline with external components.  
 
 ![workflow](./images/pipelineworkflow.png)
 
-* ##### 2. Monitor the pipeline status.
+* #### 2. Monitor the pipeline status.
 
 ![workflow](./images/trackpipeline.png)
 
-* ##### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.  
+* #### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.  
 
-* ##### 4. Integrate Azure pipeline runs with all existing Control-M capabilities.  
+* #### 4. Integrate Azure pipeline runs with all existing Control-M capabilities.  
     For example : 
                    
         a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
@@ -47,19 +47,19 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
         d. Attach prior and post dependancy steps to your pipeline for a fully encompassed view of your environment.
         e. A single reference point for the entire lifecycle of your data, from creation to analytics.
 
-   * ##### 5. Avoid connection timeouts and unnecessary pipeline reruns
+* #### 5. Avoid connection timeouts and unnecessary pipeline reruns
 
-  > ##### Contention Scenario
+  > #### Contention Scenario
  ###### Here is a typical error caused by contention on a database table due to simultaneous writes.  
 
 ![workflow](./images/pipelinetimeout.png)
 
-  > ##### Contention Challenge
+  > #### Contention Challenge
  ###### As a result there are unnecessary pipeline failures
 
 ![workflow](./images/pipelinecontention.png)
 
-  > ##### Contention Management  
+  > #### Contention Management  
 
  ###### This can be managed with Control-M resource management  
 
@@ -67,7 +67,7 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
  ###### Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to a lack of resources. The pipelines on the right are only submitted when resources are available.
 
-  > ##### Results Comparison
+  > #### Results Comparison
 
  ![workflow](./images/contentionmanagement.png)
 
