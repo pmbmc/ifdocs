@@ -105,6 +105,8 @@ Sample JSON
 #### 6. Run your first Azure Data Factory pipeline from Control-M
 
 
+#### 7. The Troubleshooting guide can be found at the following link
+https://pmbmc.github.io/ifdocs/#/adf_troubleshooting
 
 ##### Performance:
 Performance is dependant on your connectivity to Azure.
