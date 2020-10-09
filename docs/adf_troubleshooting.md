@@ -57,7 +57,7 @@ ERROR [HY000] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Can't connect to 
 'RUNSTATUS'==> 'Failed' 
 ```
 -------------------------------------------
-#### Go to Azure Data Factory plugin Introduction
+### Go to Azure Data Factory plugin Introduction
 https://pmbmc.github.io/ifdocs/
-#### Go to the Quick Start Guide
+### Go to the Quick Start Guide
 https://pmbmc.github.io/ifdocs/#/quickstart
