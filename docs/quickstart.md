@@ -18,15 +18,15 @@ Prerequisites and installation notes:
     1.) Control-M Agent on a supported Linux or Windows environment with the Application Integrator CM
     2.) Azure service account credentials
    
-For details regarding Azure service account authorization, please visit the Azure rest page by using the link below
 
-https://docs.microsoft.com/en-us/rest/api/azure/#register-your-client-application-with-azure-ad
 
   
 #### Authentication:
 This plugin uses the Azure recommended OAuth2 protocol to authenticate and authorize access to Azure data factory.
 No username and passwords are used.
+For details regarding Azure service account authorization, please visit the Azure rest page by using the link below
 
+https://docs.microsoft.com/en-us/rest/api/azure/#register-your-client-application-with-azure-ad
    
 #### 1. Download the Azure Data Factory job 
 http://github.com/adfaijob.
