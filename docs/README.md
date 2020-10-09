@@ -7,7 +7,6 @@ https://pmbmc.github.io/ifdocs/#/quickstart
 ### Short description:
 Control-M Integration plugin for Azure data factory (ADF) pipelines.
 
-
 Created on 01-Sep-2020
 Updated on 02-Oct-2020
  
@@ -70,6 +69,10 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
   > #### Results Comparison
 
  ![workflow](./images/contentionmanagement.png)
+ 
+###### Troubleshooting guide
+ 
+ https://pmbmc.github.io/ifdocs/#/adf_troubleshooting
 
 
 
