@@ -83,7 +83,7 @@ This can be managed with Control-M resource management
 
 ![workflow](./images/aznocontention.png)
 
- ###### Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to a lack of resources. The pipelines on the right are only submitted when resources are available.
+Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to a lack of resources. The pipelines on the right are only submitted when resources are available.
 
   > #### Results Comparison
 
