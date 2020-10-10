@@ -54,6 +54,7 @@ ERROR [HY000] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Can't connect to 
 -------------------------------------------
 ### Cannot connect to SQL database - timeout
 This failure can occur when your database is serverless and is in sleep mode. A rerun usually reolves since the database is activated after the first attempt.
+#### REST request template:
 ```
 method: 	GET
 URL: 	https://management.azure.com path: /subscriptions/4645667-0560-234g-a176-ed5dfg45456h22/resourceGroups/myresourcegrp/providers/Microsoft.DataFactory/factories/my-data-factory-ai/pipelineruns/e7a08cc2-1c78-46ff-bda5-654546421?api-version=2018-06-01
@@ -67,18 +68,18 @@ URL: 	https://management.azure.com path: /subscriptions/4645667-0560-234g-a176-e
 'RUNSTATUS'==> 'Failed' 
 ```
  ### Contention Errors
- ###### Here is a typical error caused by contention on a database table due to simultaneous writes.  
+Here is a typical error caused by contention on a database table due to simultaneous writes.  
 
 ![workflow](./images/pipelinetimeout.png)
 
   > #### Contention Challenge
- ###### As a result there are unnecessary pipeline failures
+As a result there are unnecessary pipeline failures
 
 ![workflow](./images/pipelinecontention.png)
 
   > #### Contention Management  
 
- ###### This can be managed with Control-M resource management  
+This can be managed with Control-M resource management  
 
 ![workflow](./images/aznocontention.png)
 
