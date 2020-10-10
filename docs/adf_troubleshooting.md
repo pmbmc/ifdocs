@@ -57,6 +57,28 @@ ERROR [HY000] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Can't connect to 
 'RUNSTATUS'==> 'Failed' ~~~~
 ```
 -------------------------------------------
+ ### Contention Errors
+ ###### Here is a typical error caused by contention on a database table due to simultaneous writes.  
+
+![workflow](./images/pipelinetimeout.png)
+
+  > #### Contention Challenge
+ ###### As a result there are unnecessary pipeline failures
+
+![workflow](./images/pipelinecontention.png)
+
+  > #### Contention Management  
+
+ ###### This can be managed with Control-M resource management  
+
+![workflow](./images/aznocontention.png)
+
+ ###### Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to a lack of resources. The pipelines on the right are only submitted when resources are available.
+
+  > #### Results Comparison
+
+ ![workflow](./images/contentionmanagement.png)
+
 ### Go to Azure Data Factory plugin Introduction
 https://pmbmc.github.io/ifdocs/
 ### Go to the Quick Start Guide

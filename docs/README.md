@@ -48,27 +48,7 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 * #### 5. Avoid connection timeouts and unnecessary pipeline reruns
 
-  > #### Contention Scenario
- ###### Here is a typical error caused by contention on a database table due to simultaneous writes.  
 
-![workflow](./images/pipelinetimeout.png)
-
-  > #### Contention Challenge
- ###### As a result there are unnecessary pipeline failures
-
-![workflow](./images/pipelinecontention.png)
-
-  > #### Contention Management  
-
- ###### This can be managed with Control-M resource management  
-
-![workflow](./images/aznocontention.png)
-
- ###### Below is a comparison from the Control-M monitoring domain. The pipelines on the left are failing due to a lack of resources. The pipelines on the right are only submitted when resources are available.
-
-  > #### Results Comparison
-
- ![workflow](./images/contentionmanagement.png)
  
 ###### Troubleshooting guide
  
