@@ -25,14 +25,14 @@ HttpResponseInfo [m_statusCode=401, m_statusMesg=Unauthorized, m_message=Error E
 Refer to the Job Definition fields in the quickstart guide. Ensure that the pipeline exists in the specified data factory
 #### REST request template:
 ``` 
-URL:https://management.azure.com,URLPath:/subscriptions/31681904-0560-470e-a176-edea4d195b22/resourceGroups/resgrpname/providers/Microsoft.DataFactory/factories/factoryname/pipelines/bla/createRun?api-version=2018-06-01,method:POSTURLParams:null
+URL:https://management.azure.com,URLPath:/subscriptions/3645645-0560-470e-a176-edea4d195b22/resourceGroups/resgrpname/providers/Microsoft.DataFactory/factories/factoryname/pipelines/bla/createRun?api-version=2018-06-01,method:POSTURLParams:null
 headers:Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbtnMkxZczJwidXRpIjoidS1QX3Z1NHJla3E0RW9mYklnSnNBQSt6pIcP16Izhf3ChDTB5GzA4tB6j0A&Content-Type=application/json
 body:{}
 ```
 #### Response Error
 ```
 HttpResponseInfo [m_statusCode=404, m_statusMesg=Not Found, m_message=Error Executing REST request to https://management.azure.com 
-: java.io.FileNotFoundException: https://management.azure.com/subscriptions/09234904-9023-470e-a176-e093495b22/resourceGroups/{{resourcegroup}}/providers/Microsoft.DataFactory/factories/bla/pipelines/bla/createRun?api-version=2018-06-01, m_contentType=application/json; charset=utf-8, m_headers=null:[HTTP/1.1 404 Not Found]; X-Content-Type-Options:[nosniff]; Pragma:[no-cache]; Date:[Thu, 08 Oct 2020 12:05:18 GMT]; x-ms-correlation-request-id:[8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Strict-Transport-Security:[max-age=31536000; includeSubDomains]; Cache-Control:[no-cache]; x-ms-failure-cause:[gateway]; x-ms-routing-request-id:[UKSOUTH:20201008T120518Z:8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Expires:[-1]; Content-Length:[210]; x-ms-request-id:[8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Content-Type:[application/json; charset=utf-8]; ]
+: java.io.FileNotFoundException: https://management.azure.com/subscriptions/45654504-9023-470e-a176-e093495b22/resourceGroups/{{resourcegroup}}/providers/Microsoft.DataFactory/factories/bla/pipelines/bla/createRun?api-version=2018-06-01, m_contentType=application/json; charset=utf-8, m_headers=null:[HTTP/1.1 404 Not Found]; X-Content-Type-Options:[nosniff]; Pragma:[no-cache]; Date:[Thu, 08 Oct 2020 12:05:18 GMT]; x-ms-correlation-request-id:[8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Strict-Transport-Security:[max-age=31536000; includeSubDomains]; Cache-Control:[no-cache]; x-ms-failure-cause:[gateway]; x-ms-routing-request-id:[UKSOUTH:20201008T120518Z:8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Expires:[-1]; Content-Length:[210]; x-ms-request-id:[8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Content-Type:[application/json; charset=utf-8]; ]
 ```
 -------------------------------------------
 ### Step failure within a pipeline
@@ -41,22 +41,31 @@ The example below reflects an unavailable data source in the first step of the p
 #### REST request template:
 ```
 method: 	GET
-URL: 	https://management.azure.com path: /subscriptions/8923u234-0560-83gr-a176-8324hurg2/resourceGroups/rscgrp/providers/Microsoft\
-.DataFactory/factories/my-data-factory-ai/pipelineruns/623eg23ef-ewiu-9792-d773-unwe812hjeed?api-version=2018-06-01
+URL: 	https://management.azure.com path: /subscriptions/8923u234-0560-83gr-a176-8324hurg2/resourceGroups/rscgrp/providers/Microsoft.DataFactory/factories/my-data-factory-ai/pipelineruns/623eg23ef-ewiu-9792-d773-unwe812hjeed?api-version=2018-06-01
 ```
 #### Response Error
 ```
-'REASON_FOR_FAILURE'==> 'Operation on target firstStepCopy failed: ErrorCode=UserErrorFailedToConnectOdbcSource,'Type=Microsoft.Dat\
-aTransfer.Common.Shared.HybridDeliveryException,Message=ERROR [08001] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Connection r\
-efused. Verify Host Name and Port Number.
+'REASON_FOR_FAILURE'==> 'Operation on target firstStepCopy failed: ErrorCode=UserErrorFailedToConnectOdbcSource,'Type=Microsoft.DataTransfer.Common.Shared.HybridDeliveryException,Message=ERROR [08001] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Connection refused. Verify Host Name and Port Number.
 
-ERROR [HY000] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Can't connect to server on 'coolhost.cantfindme.org',Source=Microsoft.Dat\
-aTransfer.Runtime.GenericOdbcConnectors,''Type=System.Data.Odbc.OdbcException,Message=ERROR [08001] [Microsoft][ODBC PostgreSQL Wir\
-e Protocol driver]Connection refused. Verify Host Name and Port Number.
+ERROR [HY000] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Can't connect to server on 'coolhost.cantfindme.org',Source=Microsoft.DataTransfer.Runtime.GenericOdbcConnectors,''Type=System.Data.Odbc.OdbcException,Message=ERROR [08001] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Connection refused. Verify Host Name and Port Number.
 ERROR [HY000] [Microsoft][ODBC PostgreSQL Wire Protocol driver]Can't connect to server on 'coolhost.cantfindme.org',Source=,'' 
 'RUNSTATUS'==> 'Failed' ~~~~
 ```
 -------------------------------------------
+### Cannot connect to SQL database - timeout
+This failure can occur when your database is serverless and is in sleep mode. A rerun usually reolves since the database is activated after the first attempt.
+```
+method: 	GET
+URL: 	https://management.azure.com path: /subscriptions/4645667-0560-234g-a176-ed5dfg45456h22/resourceGroups/myresourcegrp/providers/Microsoft.DataFactory/factories/my-data-factory-ai/pipelineruns/e7a08cc2-1c78-46ff-bda5-654546421?api-version=2018-06-01
+```
+#### Response Error
+----------------------------
+```
+'REASON_FOR_FAILURE'==> 'Operation on target firstStepCopy failed: ErrorCode=SqlFailedToConnect,'Type=Microsoft.DataTransfer.Common.Shared.HybridDeliveryException,Message=Cannot connect to SQL Database: 'mycloud.database.windows.net', Database: 'mypipe-datapipe'
+, User: 'myadmin'. Check the linked service configuration is correct, and make sure the SQL Database firewall allows the integration runtime to access.,Source=Microsoft.DataTransfer.ClientLibrary,''Type=System.Data.SqlClient.SqlException,Message=Server provided
+ routing information, but timeout already expired.,Source=.Net SqlClient Data Provider,SqlErrorNumber=0,Class=20,ErrorCode=-2146232060,State=0,Errors=[{Class=20,Number=0,State=0,Message=Server provided routing information, but timeout already expired.,},],'' 
+'RUNSTATUS'==> 'Failed' 
+```
  ### Contention Errors
  ###### Here is a typical error caused by contention on a database table due to simultaneous writes.  
 
