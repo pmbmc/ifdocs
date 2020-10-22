@@ -90,6 +90,6 @@ Below is a comparison from the Control-M monitoring domain. The pipelines on the
  ![workflow](./images/contentionmanagement.png)
 
 ### Go to Azure Data Factory plugin Introduction
-https://pmbmc.github.io/ifdocs/
+https://pmbmc.github.io/ifdocs/0
 ### Go to the Quick Start Guide
 https://pmbmc.github.io/ifdocs/#/quickstart

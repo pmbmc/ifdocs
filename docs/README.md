@@ -1,8 +1,6 @@
 # Control-M Azure Data Factory plugin
 Version 9.15
 
-### Go directly to the Quick Start Guide
-https://pmbmc.github.io/ifdocs/#/quickstart
 
 ### Short description:
 Control-M Integration plugin for Azure data factory (ADF) pipelines.
@@ -49,11 +47,17 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 * #### 5. Avoid connection timeouts and unnecessary pipeline reruns
 
 
+#### Compatibility:
+Application version: Azure Data Factory V2 
+Platforms: REST API based, built on Linux 
  
-###### Troubleshooting guide
- 
- https://pmbmc.github.io/ifdocs/#/adf_troubleshooting
+Additional optional information
+Control-M version: This job built on Control-M V9.0.20.000
+Application Integrator version: AI V9.0.20.000
 
+ 
+#### Recommended tags/keywords:
+  ETL - Azure data manipulation and integration
 
 
  
