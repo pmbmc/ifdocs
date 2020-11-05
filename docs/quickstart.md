@@ -56,10 +56,12 @@ http://github.com/adfaijob.
 
 | Field | Value |
 | --- | --- |
-| Connection Profile | The connection profile name that was define in the connection profile step 4 above
-| Resource Group Name | ADF Resource Group |
-| Data Factory Name | Click the load button for a list Data Factories based on the Resource Group above |
+| Connection Profile | The name of the predefined connection profile containing authentication detail that was defined in the connection profile step 4 above
+| Resource Group Name | Azure resource group associated with this data factory pipeline (https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) |
+| Data Factory Name | Click the load button for a list Data Factories based on the Resource Group supplied above |
 | Pipeline Name | Click the load button for a list of pipelines available to run |
+| Status Polling Frequency | The polling time in seconds that your job status should be verified
+
  
 ##### Job Definition panel
  
