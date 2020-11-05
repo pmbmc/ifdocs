@@ -56,7 +56,7 @@ http://github.com/adfaijob.
 
 | Field | Value |
 | --- | --- |
-| Connection Profile | The name of the predefined connection profile containing authentication detail that was defined in the connection profile step 4 above
+| Connection Profile | The name of the predefined connection profile containing authentication detail that was defined in the connection profile step 3 above
 | Resource Group Name | Azure resource group associated with this data factory pipeline (https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal) |
 | Data Factory Name | Click the load button for a list Data Factories based on the Resource Group supplied above |
 | Pipeline Name | Click the load button for a list of pipelines available to run |
