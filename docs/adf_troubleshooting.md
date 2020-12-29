@@ -21,6 +21,21 @@ HttpResponseInfo [m_statusCode=401, m_statusMesg=Unauthorized, m_message=Error E
 : java.io.IOException: Server returned HTTP response code: 401 for URL: https://login.microsoftonline.com/0934mfc5-5839-40a6-8##9-c1f9034jre69b/oauth2/token, m_contentType=application/json; charset=utf-8, m_headers=null:[HTTP/1.1 401 Unauthorized]; x-ms-ests-server:[2.1.11086.7 - CHI ProdSlices]; X-Content-Type-Options:[nosniff]; Pragma:[no-cache]; P3P:[CP="DSP CUR OTPi IND OTRi ONL FIN"]; Date:[Thu, 08 Oct 2020 12:10:03 GMT]; Strict-Transport-Security:[max-age=31536000; includeSubDomains]; Cache-Control:[no-store, no-cache]; Set-Cookie:[stsservicecookie=ests; path=/; secure; samesite=none; httponly, x-ms-gateway-slice=prod; path=/; secure; samesite=none; httponly, fpc=AgMVHzbAQitNnw62-jhLM8tUrL00AQAAAJz4ENcOAAAA; expires=Sat, 07-Nov-2020 12:10:04 GMT; path=/; secure; HttpOnly; SameSite=None]; Expires:[-1]; Content-Length:[471]; x-ms-request-id:[642598ec-7858-49f0-ab92-e610f90b6500]; Content-Type:[application/json; charset=utf-8]; ]
 ```
 -------------------------------------------
+
+### API Permissions
+
+#### REST request template:
+``` 
+URL:https://management.azure.com,URLPath:/subscriptions/3645645-0560-470e-a176-edea4d195b22/resourceGroups/resgrpname/providers/Microsoft.DataFactory/factories/factoryname/pipelines/bla/createRun?api-version=2018-06-01,method:POSTURLParams:null
+headers:Authorization=Bearer eyJ0eXAiOiJKV1QiLCJhbtnMkxZczJwidXRpIjoidS1QX3Z1NHJla3E0RW9mYklnSnNBQSt6pIcP16Izhf3ChDTB5GzA4tB6j0A&Content-Type=application/json
+body:{}
+```
+#### Response Error
+```
+HttpResponseInfo [m_statusCode=404, m_statusMesg=Not Found, m_message=Error Executing REST request to https://management.azure.com 
+: java.io.FileNotFoundException: https://management.azure.com/subscriptions/45654504-9023-470e-a176-e093495b22/resourceGroups/{{resourcegroup}}/providers/Microsoft.DataFactory/factories/bla/pipelines/bla/createRun?api-version=2018-06-01, m_contentType=application/json; charset=utf-8, m_headers=null:[HTTP/1.1 404 Not Found]; X-Content-Type-Options:[nosniff]; Pragma:[no-cache]; Date:[Thu, 08 Oct 2020 12:05:18 GMT]; x-ms-correlation-request-id:[8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Strict-Transport-Security:[max-age=31536000; includeSubDomains]; Cache-Control:[no-cache]; x-ms-failure-cause:[gateway]; x-ms-routing-request-id:[UKSOUTH:20201008T120518Z:8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Expires:[-1]; Content-Length:[210]; x-ms-request-id:[8877fce5-f14d-4d5a-b3e5-b7bd92c23481]; Content-Type:[application/json; charset=utf-8]; ]
+```
+-------------------------------------------
 ### Missing or incorrect details in data factory field
 Refer to the Job Definition fields in the quickstart guide. Ensure that the pipeline exists in the specified data factory
 #### REST request template:
