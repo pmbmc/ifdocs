@@ -31,13 +31,15 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
 
 ![workflow](./images/pipelineworkflow.png)
 
-* #### 2. Monitor the pipeline status.
+* #### 2. Trigger pipelines with parameters.
+
+* #### 3. Monitor the pipeline status.
 
 ![workflow](./images/trackpipeline.png)
 
-* #### 3. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.  
+* #### 4. Return the results of the pipeline steps to the output in the Control-M Monitoring domain.  
 
-* #### 4. Integrate Azure pipeline runs with all existing Control-M capabilities.  
+* #### 5. Integrate Azure pipeline runs with all existing Control-M capabilities.  
     For example : 
                    
         a. Have your pipeline tasks defined in JSON and managed by your cicd process.          
@@ -46,7 +48,7 @@ visibility and management of the entire ecosystem, bonding pipelines with supply
         d. Attach prior and post dependancy steps to your pipeline for a fully encompassed view of your environment.
         e. A single reference point for the entire lifecycle of your data, from creation to analytics.
 
-* #### 5. Avoid connection timeouts and unnecessary pipeline reruns
+* #### 6. Avoid connection timeouts and unnecessary pipeline reruns
 
 
  
